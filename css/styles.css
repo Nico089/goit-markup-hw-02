@@ -40,15 +40,24 @@ footer {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
 
 .navigation .link {
-  text-decoration: none;
   color: var(--header-color);
 }
 
-.navigation .link:hover {
-  text-decoration: none;
+.navigation .link:hover,
+.navigation .link:focus {
+  color: var(--brand-color);
+}
 
+.navigation .link.current {
   color: var(--brand-color);
 }
 
@@ -68,7 +77,8 @@ footer {
   color: var(--description-color);
 }
 
-.contacts .contacts-link:hover {
+.contacts .contacts-link:hover,
+.contacts .contacts-link:focus {
   text-decoration: none;
 
   color: var(--brand-color);
@@ -206,10 +216,6 @@ footer {
   color: var(--brand-color);
 }
 
-.list {
-  list-style: none;
-}
-
 /*Page portfolio*/
 
 .buttons {
@@ -224,7 +230,8 @@ footer {
 
   border-width: 0;
 }
-.buttons:hover {
+.buttons:hover,
+.buttons:focus {
   color: #ffffff;
   background: var(--brand-color);
   border-radius: 4px;
