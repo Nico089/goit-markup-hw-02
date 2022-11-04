@@ -1,10 +1,13 @@
 body {
   font-family: 'Roboto', sans-serif;
-  background: #ffffff;
+  background: var(--background-body);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: var(--black-color);
 }
 
 footer {
-  background: #2f303a;
+  background: var(--background-dark);
 }
 
 :root {
@@ -13,6 +16,9 @@ footer {
   --description-color: #757575;
   --white-color: #ffffff;
   --black-color: #000000;
+  --background-body: #ffffff;
+  --background-dark: #2f303a;
+  --address-color: rgba(255, 255, 255, 0.6);
 }
 
 /*Logo style*/
@@ -22,7 +28,6 @@ footer {
   font-size: 26px;
   line-height: 1.19;
 
-  letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--brand-color);
 }
@@ -38,7 +43,6 @@ footer {
 /*Site navigation*/
 .navigation {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
@@ -67,7 +71,6 @@ footer {
 .contacts {
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   list-style: none;
@@ -87,7 +90,7 @@ footer {
 }
 /*Section*/
 .section {
-  background: #2f303a;
+  background: var(--background-dark);
 }
 
 .header-one {
@@ -118,7 +121,7 @@ footer {
 
   color: var(--white-color);
 
-  background: #2196f3;
+  background: var(--brand-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-width: 0;
@@ -130,7 +133,6 @@ footer {
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
-  letter-spacing: 0.03em;
 
   color: var(--header-color);
 }
@@ -153,20 +155,14 @@ footer {
 /*Section three*/
 .header-three {
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 
   color: var(--header-color);
 }
 
 .description-text {
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-
-  letter-spacing: 0.03em;
 
   color: var(--description-color);
 }
@@ -179,18 +175,15 @@ footer {
   line-height: 1.18;
 
   text-align: center;
-  letter-spacing: 0.03em;
 
   color: var(--header-color);
 }
 
 .card-description {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
 
   text-align: center;
-  letter-spacing: 0.03em;
 
   color: var(--description-color);
 }
@@ -199,10 +192,8 @@ footer {
 
 .address {
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.74;
-  letter-spacing: 0.03em;
+  letter-spacing: var(--typical-letter-spacing);
 }
 
 .address-map {
@@ -211,7 +202,7 @@ footer {
 }
 
 .address .address-contacts {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--address-color);
   text-decoration: none;
 }
 
@@ -223,13 +214,11 @@ footer {
 /*Page portfolio*/
 
 .portfolio-buttons {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-weight: 500;
-  font-style: normal;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--header-color);
 
   border-width: 0;
@@ -253,10 +242,8 @@ footer {
 }
 
 .portfolio-description {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
 
   color: var(--description-color);
 }
